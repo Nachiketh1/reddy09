@@ -1,0 +1,82 @@
+#include <stdio.h>
+#include <stdlib.h>
+struct emp
+{
+  int empno;
+  char empname[20];
+  char deptname[30];
+  int empsalary;
+  struct employee *next;
+};
+int entry()
+{
+  struct emp n;
+  scanf("%d",n.empno);
+  scanf("%s",n.empname);
+  scanf("%s",n.deptname);
+  scanf("%d",&n.empsalary);
+  
+}
+int print(struct emp *n)
+{
+  while(n!=NULL)
+  {
+  printf("%d",n->empno);
+  printf("%s",n->empname);
+  printf("%s",n->deptname);
+  printf("%d",n->empsalary);
+  n=n->next;
+  }
+return 0;
+}
+int main()
+{
+  struct emp *first;
+  struct emp *second;
+  struct emp *third;
+  struct emp *fourth;
+  struct emp *fifth;
+  struct emp *sixth;
+  struct emp *seventh;
+  struct emp *eighth;
+  struct emp *ninenth;
+  struct emp *ten;
+first=(struct emp *)malloc(sizeof(struct emp));
+second=(struct emp *)malloc(sizeof(struct emp));
+third=(struct emp *)malloc(sizeof(struct emp));
+fourth=(struct emp *)malloc(sizeof(struct emp));
+fifth=(struct emp *)malloc(sizeof(struct emp));
+sixth=(struct emp *)malloc(sizeof(struct emp));
+seventh=(struct emp *)malloc(sizeof(struct emp));
+eighth=(struct emp *)malloc(sizeof(struct emp));
+ninenth=(struct emp *)malloc(sizeof(struct emp));
+ten=(struct emp *)malloc(sizeof(struct emp));
+
+first=entry();
+first->next=second;
+second=entry;
+second->next=third;
+third=entry();
+third->next=fourth;
+fourth=entry();
+fourth->next=fifth;
+fifth=entry();
+fifth->next=sixth;
+sixth=entry();
+sixth->next=seventh;
+seventh=entry();
+seventh->next=eighth;
+eighth=entry();
+eighth->next=ninenth;
+ninenth=entry();
+ninenth->next=ten;
+ten=entry();
+ten->next=NULL;
+
+print(first);
+
+ return 0;
+}
+
+
+  
