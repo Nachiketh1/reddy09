@@ -1,0 +1,23 @@
+#include<stdio.h>
+int main()
+{
+  printf("task to print steps using 0 and 1 , o at odd places and 1 at even places");
+  int i=1,j=0;
+  for(i=0;i<7;i++)
+  {
+    for(j=1;j<=2*i;j++)
+    {
+      if(j%2==1)
+      {
+        printf("0");
+      }
+      else if(j%2==0)
+      {
+        printf("1");
+      }
+
+    }
+    printf("\n");
+   }
+  return 0;
+}  
