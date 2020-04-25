@@ -1,0 +1,20 @@
+#include<stdio.h>
+int main()
+{
+  int n;
+  printf("----------menu-----------------");
+  printf("1. pizza - 239/-/n 2.Burger - 129/-
+  /n 3.Pasta - 179/- /n 4.French fries - 99/- /n 5.Sandwich - 149/-");
+  printf("enter the item number which u choose to eat");
+  scanf("%d",&n);
+  switch(n)
+  {
+    case 1:printf("food item pizza /n cost 239 rupees only");
+    case 2:printf("food item Burger /n cost 129 rupees only");
+    case 3:printf("food item Pasta  /n cost 179 rupees only");
+    case 4:printf("food item French fries   /n cost 99 rupees only");
+    case 5:printf("food item Sandwich /n cost 149 rupees only");
+    default:printf("enter correct choice ");
+    }
+return 0;
+}
