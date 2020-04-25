@@ -1,0 +1,22 @@
+#include<stdio.h>
+int sum(n)
+{
+  int count=0;
+  while(n>0)
+  {
+    count=count+n%10;
+    n=n/10;
+   }
+   return count;
+}
+
+
+int main()
+{
+  printf("enter any number");
+  int n,s;
+  scanf("%d",&n);
+  s=sum(n);
+  printf("sum of digits is %d",s);
+return 0;
+}
