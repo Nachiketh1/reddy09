@@ -1,0 +1,28 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+int main()
+{
+    int count=0,i;
+    char ch,cu;
+
+    FILE *fp;
+
+    fp=fopen("fresh.txt","r");
+    while(ch!=EOF)
+    {
+        ch=getc(fp);
+        count++;
+    }
+    char ele[100];
+    fp=fopen("fresh.txt","r");
+    while(cu!=EOF)
+    {
+        ele[i]=cu=getc(fp);
+    }
+    for(i=(count-1);i=0;i++)
+    {
+        printf("%d",ele[i]);
+    }
+
+}
